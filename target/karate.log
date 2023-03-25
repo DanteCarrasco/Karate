@@ -1,0 +1,144 @@
+03:39:09.149 [com.intuit.karate.cli.Main.main()] INFO  com.intuit.karate - Karate version: 1.3.1
+03:39:09.434 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+03:39:09.468 [com.intuit.karate.cli.Main.main()] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 32
+03:39:10.853 [com.intuit.karate.cli.Main.main()] INFO  com.intuit.karate - karate.env system property was: null 
+03:39:10.960 [com.intuit.karate.cli.Main.main()] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('classpath:helpers/CreateToken.feature') {"email": "xavier@hola.com", "password": "Xavier3012"}
+03:39:11.762 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 60
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"xavier@hola.com","password":"Xavier3012"}}
+
+03:39:12.548 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - response time in milliseconds: 778
+1 < 200
+1 < Date: Fri, 24 Mar 2023 08:39:14 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"151-iP0LUfzbJNGFYdwW1OxbykSAggk"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=9lgSOYZBLwF%2FUMuIti0%2BIQq92qDKUa2gl0Kzps5582qTlAE9Lk3ZROPVOMc1VTmLGePhfVdYNxpsOTg8TyNtGeRDkHveMGLQBZ%2FxUEzn8RjKf7aGDCajY%2FLCIhN%2BD7hH7vJf"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 7acd9a37cdcd3341-MIA
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"user":{"email":"xavier@hola.com","username":"Karate0306","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InhhdmllckBob2xhLmNvbSIsInVzZXJuYW1lIjoiS2FyYXRlMDMwNiIsImlhdCI6MTY3OTY0NzE1NCwiZXhwIjoxNjg0ODMxMTU0fQ.ubGUMQOkid1fnjgkhUFBkpAod3MrIuO5pC9IzAzXw4k"}}
+
+03:39:12.560 [com.intuit.karate.cli.Main.main()] INFO  com.intuit.karate - << lock released, cached callonce: read('classpath:helpers/CreateToken.feature') {"email": "xavier@hola.com", "password": "Xavier3012"}
+03:39:12.574 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/articles
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InhhdmllckBob2xhLmNvbSIsInVzZXJuYW1lIjoiS2FyYXRlMDMwNiIsImlhdCI6MTY3OTY0NzE1NCwiZXhwIjoxNjg0ODMxMTU0fQ.ubGUMQOkid1fnjgkhUFBkpAod3MrIuO5pC9IzAzXw4k
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 146
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
+1 > Accept-Encoding: gzip,deflate
+{"article":{"tagList":["article"],"title":"Eliminar articulo 6","description":"De cosas del orinoco","body":"Que tú no sabeas ni yo tampoco xd"}}
+
+03:39:13.033 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - response time in milliseconds: 455
+1 < 200
+1 < Date: Fri, 24 Mar 2023 08:39:14 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"1a5-mI6AjQF/773VLnnojpZmYTuef3w"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=0H0gwuV0QpdqWUryrE1%2Fpq1tyJz1PuoYPaQUIePjnpbz7AnVzA0bYLoXE0OEkpGAOQB44QuXfPOKwlkp6mvhqXK%2BYeZGGNbT7Lc39ZkM4Ug9t5gydKcSHT0uSrgAS16I7F1r"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 7acd9a3b591767e6-MIA
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"article":{"slug":"Eliminar-articulo-6-150677","title":"Eliminar articulo 6","description":"De cosas del orinoco","body":"Que tú no sabeas ni yo tampoco xd","tagList":["article"],"createdAt":"2023-03-24T08:39:14.505Z","updatedAt":"2023-03-24T08:39:14.505Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate0306","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}}}
+
+03:39:13.050 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - request:
+2 > GET https://api.realworld.io/api/articles?offset=0&author=Karate0306&limit=10
+2 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InhhdmllckBob2xhLmNvbSIsInVzZXJuYW1lIjoiS2FyYXRlMDMwNiIsImlhdCI6MTY3OTY0NzE1NCwiZXhwIjoxNjg0ODMxMTU0fQ.ubGUMQOkid1fnjgkhUFBkpAod3MrIuO5pC9IzAzXw4k
+2 > Host: api.realworld.io
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
+2 > Accept-Encoding: gzip,deflate
+
+
+03:39:13.807 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - response time in milliseconds: 754
+2 < 200
+2 < Date: Fri, 24 Mar 2023 08:39:15 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Transfer-Encoding: chunked
+2 < Connection: keep-alive
+2 < X-Powered-By: Express
+2 < Access-Control-Allow-Origin: *
+2 < Etag: W/"fcc-/xTYVhgRiPk3uqHXuLiTSY7WvPk"
+2 < Via: 1.1 vegur
+2 < CF-Cache-Status: DYNAMIC
+2 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=xlcoj5rn0juOny416y7Y5vazhjJMtiyBXg17MktkiUVGxcJeRNZTXi2mcXjak3FOpLvcewI8TK11MqoQnK9GSeiCoc4mPM9mDkLFc0TZFSSiufGkr%2FHcgNXFndbSgpZbmh3D"}],"group":"cf-nel","max_age":604800}
+2 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+2 < Server: cloudflare
+2 < CF-RAY: 7acd9a3e6ec7dacd-MIA
+2 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"articles":[{"slug":"Eliminar-articulo-6-150677","title":"Eliminar articulo 6","description":"De cosas del orinoco","body":"Que tú no sabeas ni yo tampoco xd","tagList":["article"],"createdAt":"2023-03-24T08:39:14.505Z","updatedAt":"2023-03-24T08:39:14.505Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate0306","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Eliminar-articulo-5-150677","title":"Eliminar articulo 5","description":"De cosas del orinoco","body":"Que tú no sabeas ni yo tampoco xd","tagList":["article"],"createdAt":"2023-03-24T08:14:25.637Z","updatedAt":"2023-03-24T08:14:25.637Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate0306","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Eliminar-articulo-3-150677","title":"Eliminar articulo 3","description":"De cosas del orinoco","body":"Que tú no sabeas ni yo tampoco xd","tagList":["article"],"createdAt":"2023-03-24T08:11:13.781Z","updatedAt":"2023-03-24T08:11:13.781Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate0306","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Eliminar-articulo-2-150677","title":"Eliminar articulo 2","description":"De cosas del orinoco","body":"Que tú no sabeas ni yo tampoco xd","tagList":["article"],"createdAt":"2023-03-24T08:08:50.101Z","updatedAt":"2023-03-24T08:08:50.101Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate0306","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Eliminar-articulo-150677","title":"Eliminar articulo","description":"De cosas del orinoco","body":"Que tú no sabeas ni yo tampoco xd","tagList":["article"],"createdAt":"2023-03-24T08:00:26.719Z","updatedAt":"2023-03-24T08:00:26.719Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate0306","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Articulo-69-150677","title":"Articulo 69","description":"De cosas del orinoco","body":"Que tú no sabeas ni yo tampoco xd","tagList":["article"],"createdAt":"2023-03-24T07:52:49.069Z","updatedAt":"2023-03-24T07:52:49.069Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate0306","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Articulo-6-150677","title":"Articulo 6","description":"De cosas del orinoco","body":"Que tú no sabeas ni yo tampoco xd","tagList":["article"],"createdAt":"2023-03-24T07:07:21.644Z","updatedAt":"2023-03-24T07:07:21.644Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate0306","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Articulo-56-150677","title":"Articulo 56","description":"De cosas del orinoco","body":"Que tú no sabeas ni yo tampoco xd","tagList":["article"],"createdAt":"2023-03-24T07:05:54.427Z","updatedAt":"2023-03-24T07:05:54.427Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate0306","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Articulo-5-150677","title":"Articulo 5","description":"De cosas del orinoco","body":"Que tú no sabeas ni yo tampoco xd","tagList":["article"],"createdAt":"2023-03-24T07:04:34.846Z","updatedAt":"2023-03-24T07:04:34.846Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate0306","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Articulo-4-150677","title":"Artículo 4","description":"De cosas del orinoco","body":"Que tú no sabeas ni yo tampoco xd","tagList":["article"],"createdAt":"2023-03-24T07:03:12.201Z","updatedAt":"2023-03-24T07:03:12.201Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate0306","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":13}
+
+03:39:13.836 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - request:
+3 > DELETE https://api.realworld.io/api/articles/Eliminar-articulo-6-150677
+3 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InhhdmllckBob2xhLmNvbSIsInVzZXJuYW1lIjoiS2FyYXRlMDMwNiIsImlhdCI6MTY3OTY0NzE1NCwiZXhwIjoxNjg0ODMxMTU0fQ.ubGUMQOkid1fnjgkhUFBkpAod3MrIuO5pC9IzAzXw4k
+3 > Host: api.realworld.io
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
+3 > Accept-Encoding: gzip,deflate
+
+
+03:39:14.190 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - response time in milliseconds: 351
+3 < 204
+3 < Date: Fri, 24 Mar 2023 08:39:15 GMT
+3 < Content-Length: 0
+3 < Connection: keep-alive
+3 < X-Powered-By: Express
+3 < Access-Control-Allow-Origin: *
+3 < Etag: W/"a-bAsFyilMr4Ra1hIU5PyoyFRunpI"
+3 < Via: 1.1 vegur
+3 < CF-Cache-Status: DYNAMIC
+3 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=0ta5wwZdWRtRB7rw%2FA4Q%2Bed1FU70RsOozFyhnRCrKPADoksRS5XNSfnetROU2ekv7MAYdcKf9paVGyvom3daWaxfti%2B74%2FHDCpq4nrGSsgWeqzK8Ly6DYt8Yl0cyue%2F9QlmK"}],"group":"cf-nel","max_age":604800}
+3 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+3 < Server: cloudflare
+3 < CF-RAY: 7acd9a429c78dae1-MIA
+3 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+
+
+03:39:14.196 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - request:
+4 > GET https://api.realworld.io/api/articles?offset=0&author=Karate0306&limit=10
+4 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InhhdmllckBob2xhLmNvbSIsInVzZXJuYW1lIjoiS2FyYXRlMDMwNiIsImlhdCI6MTY3OTY0NzE1NCwiZXhwIjoxNjg0ODMxMTU0fQ.ubGUMQOkid1fnjgkhUFBkpAod3MrIuO5pC9IzAzXw4k
+4 > Host: api.realworld.io
+4 > Connection: Keep-Alive
+4 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
+4 > Accept-Encoding: gzip,deflate
+
+
+03:39:14.828 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - response time in milliseconds: 630
+4 < 200
+4 < Date: Fri, 24 Mar 2023 08:39:16 GMT
+4 < Content-Type: application/json; charset=utf-8
+4 < Transfer-Encoding: chunked
+4 < Connection: keep-alive
+4 < X-Powered-By: Express
+4 < Access-Control-Allow-Origin: *
+4 < Etag: W/"fbb-rA/Kl8JiJVeIQTqzky91jI+VpaA"
+4 < Via: 1.1 vegur
+4 < CF-Cache-Status: DYNAMIC
+4 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=3gaZGF6G5BpwSeyhjooMKbjuQ8YBmtXoJ5orMWGijXgZEmSkN418HsAGzeQJrCdhm0Lv7DskZijQnL4FK8D6%2FMZjxxNeQMBDJ1jdQgn9IOb2%2BSr%2B7exCFDSAnhdsIV8WShqS"}],"group":"cf-nel","max_age":604800}
+4 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+4 < Server: cloudflare
+4 < CF-RAY: 7acd9a44da36dac1-MIA
+4 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"articles":[{"slug":"Eliminar-articulo-5-150677","title":"Eliminar articulo 5","description":"De cosas del orinoco","body":"Que tú no sabeas ni yo tampoco xd","tagList":["article"],"createdAt":"2023-03-24T08:14:25.637Z","updatedAt":"2023-03-24T08:14:25.637Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate0306","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Eliminar-articulo-3-150677","title":"Eliminar articulo 3","description":"De cosas del orinoco","body":"Que tú no sabeas ni yo tampoco xd","tagList":["article"],"createdAt":"2023-03-24T08:11:13.781Z","updatedAt":"2023-03-24T08:11:13.781Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate0306","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Eliminar-articulo-2-150677","title":"Eliminar articulo 2","description":"De cosas del orinoco","body":"Que tú no sabeas ni yo tampoco xd","tagList":["article"],"createdAt":"2023-03-24T08:08:50.101Z","updatedAt":"2023-03-24T08:08:50.101Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate0306","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Eliminar-articulo-150677","title":"Eliminar articulo","description":"De cosas del orinoco","body":"Que tú no sabeas ni yo tampoco xd","tagList":["article"],"createdAt":"2023-03-24T08:00:26.719Z","updatedAt":"2023-03-24T08:00:26.719Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate0306","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Articulo-69-150677","title":"Articulo 69","description":"De cosas del orinoco","body":"Que tú no sabeas ni yo tampoco xd","tagList":["article"],"createdAt":"2023-03-24T07:52:49.069Z","updatedAt":"2023-03-24T07:52:49.069Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate0306","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Articulo-6-150677","title":"Articulo 6","description":"De cosas del orinoco","body":"Que tú no sabeas ni yo tampoco xd","tagList":["article"],"createdAt":"2023-03-24T07:07:21.644Z","updatedAt":"2023-03-24T07:07:21.644Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate0306","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Articulo-56-150677","title":"Articulo 56","description":"De cosas del orinoco","body":"Que tú no sabeas ni yo tampoco xd","tagList":["article"],"createdAt":"2023-03-24T07:05:54.427Z","updatedAt":"2023-03-24T07:05:54.427Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate0306","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Articulo-5-150677","title":"Articulo 5","description":"De cosas del orinoco","body":"Que tú no sabeas ni yo tampoco xd","tagList":["article"],"createdAt":"2023-03-24T07:04:34.846Z","updatedAt":"2023-03-24T07:04:34.846Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate0306","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Articulo-4-150677","title":"Artículo 4","description":"De cosas del orinoco","body":"Que tú no sabeas ni yo tampoco xd","tagList":["article"],"createdAt":"2023-03-24T07:03:12.201Z","updatedAt":"2023-03-24T07:03:12.201Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate0306","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Articulo-3-150677","title":"Artículo 3","description":"De cosas del orinoco","body":"Que tú no sabeas ni yo tampoco xd","tagList":["article"],"createdAt":"2023-03-24T07:01:56.982Z","updatedAt":"2023-03-24T07:01:56.982Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate0306","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":12}
+
+03:39:16.205 [com.intuit.karate.cli.Main.main()] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/examples/conduitApp/feature/Articles.feature

@@ -1,0 +1,16 @@
+{
+    // Use IntelliSense para saber los atributos posibles.
+    // Mantenga el puntero para ver las descripciones de los existentes atributos.
+    // Para más información, visite: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "karate",
+            "name": "Karate (debug): Standalone",
+            "request": "launch",
+            "feature": "${command:karateRunner.getDebugFile}",
+            "karateOptions": "",
+            "karateCli": "${config:karateRunner.karateJar.commandLineArgs} -d ${command:karateRunner.getDebugPort}"
+        }
+    ]
+}
